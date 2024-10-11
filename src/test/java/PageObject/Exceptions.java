@@ -3,6 +3,7 @@ package PageObject;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Iterator;
 import java.util.List;
 
@@ -59,6 +60,12 @@ public class Exceptions {
 	WebElement QuaterlyException;
 	@FindBy(xpath = "//input[@placeholder='Enter MRB Reference Number']")
 	List<WebElement> EnterMRB;
+	@FindBy(xpath = "//span[text()=\"Customer Routed Freight\"]")
+	WebElement VerifyCMF;
+	@FindBy(xpath = "//span[text()=\"Intel Managed Freight\"]")
+	WebElement VerifyIMF;
+	@FindBy(xpath = "//label[normalize-space()='Case']//following::input[@name='Case-CaseNumber']")
+	WebElement EnterTextIntocasefield;
 
 	public void SelectServiceTypeException() {
 		commonclick.scrollAndClick(SelectServiceTypeException);
@@ -156,28 +163,103 @@ public class Exceptions {
 		}
 	}
 
-	@FindBy(xpath = "//span[text()=\"Customer Routed Freight\"]")
-	WebElement VerifyCMF;
-
 	public void VerifyCMF() {
 		String CMFValue = VerifyCMF.getText(); // Fetch the text from the element
 		String expectedCMFValue = "Customer Routed Freight"; // Expected text
-System.out.println("CMF Location: "+CMFValue);
+		System.out.println("CMF Location: " + CMFValue);
 		// Assertion to verify the CMF value
 		Assert.assertEquals(CMFValue, expectedCMFValue, "CMF value did not match!");
 
 	}
-	@FindBy(xpath = "//span[text()=\"Intel Managed Freight\"]")
-	WebElement VerifyIMF;
 
 	public void VerifyIMF() {
 		// Fetch the text from the located element
 		String IMFValue = VerifyIMF.getText();
 		String expectedCMFValue = "Intel Managed Freight";
-		System.out.println("IMF Location: "+IMFValue);
+		System.out.println("IMF Location: " + IMFValue);
 
 		// Assertion to verify the CMF value
 		Assert.assertEquals(IMFValue, expectedCMFValue, "IMF value did not match!");
+	}
+
+	public void entercaseno() {
+		// Path to the Excel file
+		String excelFilePath = "C:\\Users\\oyadavx\\Downloads\\MMCPN_BulkUploadTemplate (1) - Copy - Copy.xlsx";
+		FileInputStream excelFile = null;
+		Workbook workbook = null;
+
+		try {
+			// Open the Excel file
+			excelFile = new FileInputStream(new File(excelFilePath));
+			workbook = new XSSFWorkbook(excelFile);
+			Sheet sheet = workbook.getSheetAt(0); // Assuming values are in the first sheet
+
+			// Skip the header row
+			Iterator<Row> iterator = sheet.iterator();
+			if (iterator.hasNext()) {
+				iterator.next(); // Skip the header row
+			}
+
+			// Variable to store the data from the desired column
+			String thirdColumnData = "";
+
+			// Check if there is a row with data
+			if (iterator.hasNext()) {
+				Row currentRow = iterator.next(); // Get the next row (first data row)
+
+				// Get the value from the column (index 10)
+				Cell thirdColumnCell = currentRow.getCell(10); // Column index starts from 10
+
+				if (thirdColumnCell != null) {
+					// Handle the different cell types
+					switch (thirdColumnCell.getCellType()) {
+					case STRING:
+						thirdColumnData = thirdColumnCell.getStringCellValue().trim();
+						break;
+					case NUMERIC:
+						// Format numeric values to avoid scientific notation
+						DecimalFormat df = new DecimalFormat("#");
+						thirdColumnData = df.format(thirdColumnCell.getNumericCellValue());
+						break;
+					case BOOLEAN:
+						thirdColumnData = String.valueOf(thirdColumnCell.getBooleanCellValue());
+						break;
+					case FORMULA:
+						thirdColumnData = thirdColumnCell.getCellFormula();
+						break;
+					case BLANK:
+						thirdColumnData = "";
+						break;
+					default:
+						thirdColumnData = thirdColumnCell.toString().trim();
+					}
+
+					System.out.println("Case data: " + thirdColumnData);
+
+					// Enter the data into the field if it's not empty
+					if (!thirdColumnData.isEmpty()) {
+						EnterTextIntocasefield.clear();
+						commonclick.scrollAndClick(EnterTextIntocasefield);
+						EnterTextIntocasefield.sendKeys(thirdColumnData); // Enter the column data
+					}
+				}
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			// Ensure resources are closed properly
+			try {
+				if (workbook != null) {
+					workbook.close();
+				}
+				if (excelFile != null) {
+					excelFile.close();
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 }

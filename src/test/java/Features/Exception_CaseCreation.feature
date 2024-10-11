@@ -14,7 +14,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select Exception Return Reason
@@ -50,7 +50,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit 
    And Select GRL Exception Reason
@@ -86,7 +86,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Quarterly Exception
@@ -127,7 +127,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit NPR
     And Select GRL Exception Reason
@@ -160,7 +160,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit NPR
     And Select GRL Exception Reason
@@ -193,7 +193,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select GRL Exception Reason
@@ -211,7 +211,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select Exception Return Reason
@@ -238,7 +238,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit 
    And Select GRL Exception Reason
@@ -265,7 +265,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select GRL Exception Reason
@@ -291,7 +291,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select GRL Exception Reason
@@ -318,7 +318,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Quarterly Exception
@@ -344,7 +344,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select GRL Exception Reason
@@ -369,7 +369,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit NPR
     #And Select GRL Exception Reason
@@ -397,7 +397,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit NPR
     #And Select GRL Exception Reason
@@ -422,7 +422,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select GRL Exception Reason
@@ -455,7 +455,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select GRL Exception Reason
@@ -492,7 +492,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select Exception Return Reason

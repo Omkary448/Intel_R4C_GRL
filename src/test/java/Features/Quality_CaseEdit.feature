@@ -18,7 +18,7 @@ Scenario: Verify the Open Unsubmitted status Case Edit for Quality with Freight 
   #And Select Service Type Quality and Click create button
    #And Enter SoldTo and select "6006683685" 
    And Select Remedy and reason
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select RCA address first
    And Select Return customer contact first
@@ -70,7 +70,7 @@ Scenario: Verify the Open Unsubmitted status Case Edit for Quality with Freight 
   # And Select Service Type Quality and Click create button
    #And Enter SoldTo and select "6006683685" 
    And Select Remedy and reason
-   And Select All other detils
+   And Select All other detaxils
    And Select Ship To contact
    And Select RCA address first
    And Select Return customer contact first

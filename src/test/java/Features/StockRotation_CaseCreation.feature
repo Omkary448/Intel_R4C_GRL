@@ -17,7 +17,7 @@ Feature: R4C Case Creation
    And Click on the create button
    And Enter SoldTo and select "6006683685"
    #And Enter Sold To details
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Promotional Stock option
@@ -65,7 +65,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Select service type as "Stock Rotation & Return"
    And Click on the create button
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
   #And Enter Sold To details
@@ -109,7 +109,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Select service type as Stock roatation
    #And Enter Sold To details
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Promotional Stock option
@@ -150,7 +150,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Select service type as Stock roatation
    #And Enter Sold To details
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Promotional Stock option
@@ -207,7 +207,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Click on the create button
    And Enter SoldTo and select "6006683685"
    #And Enter Sold To details
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select Promotional Stock option
@@ -248,7 +248,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Select service type as "Stock Rotation & Return"
    And Click on the create button
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
   # And Enter Sold To details
@@ -289,7 +289,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Select service type as Stock roatation
    #And Enter Sold To details
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Promotional Stock option
@@ -362,7 +362,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Select service type as Stock roatation
    #And Enter Sold To details
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Promotional Stock option
@@ -403,7 +403,7 @@ Scenario: Verify the Case creation for Stock Rotation & Return Reason as
    And Select service type as Stock roatation
    #And Enter Sold To details
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Promotional Stock option
@@ -446,7 +446,7 @@ Given User Launch Chrome browser
    And Select service type as Stock roatation
    #And Enter Sold To details
    And Enter SoldTo and select "6006683685"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Promotional Stock option
@@ -476,7 +476,7 @@ Given User Launch Chrome browser
    And Click on the create button
    And Enter SoldTo and select "6006683685" 
    And Select Remedy and reason
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select RCA address first
    And Select Return customer contact first
@@ -517,7 +517,7 @@ Given User Launch Chrome browser
    And Click on the create button
    And Enter SoldTo and select "6006683685" 
    And Select Remedy and reason
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select RCA address first
    And Select Return customer contact first

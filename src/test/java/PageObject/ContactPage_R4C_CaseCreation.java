@@ -256,9 +256,8 @@ public class ContactPage_R4C_CaseCreation {
 	WebElement clicknextbutton;
 	public void clicknextbutton() throws InterruptedException 
 	{
-    Thread.sleep(50000);
-    commonclick.scrollAndClick(clicknextbutton);
-		
+    Thread.sleep(000);
+    commonclick.scrollAndClick(clicknextbutton);	
 	}
 // -----------------Case Edit TC-Submitted Pending Action-------------
 
@@ -966,8 +965,12 @@ public class ContactPage_R4C_CaseCreation {
 	}
 
 	public void ClickOnCancel() {
+		
 		commonclick.scrollAndClick(ClickOnCancel);
+		
+		
 	}
+	
 	@FindBy(xpath="//button[text()=\"Submit\"]")
 	WebElement ClickSubmit;
 	

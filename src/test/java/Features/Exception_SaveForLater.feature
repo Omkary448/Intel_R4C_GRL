@@ -6,7 +6,7 @@ Feature: Exception Case Creation
    #And Click on login
 @TestCaseNo1
 @Sanity
-Scenario: Verify the Case creation for Service Type as Exception & Remedy as Credit & Return Reason as Exception Return using PO Search
+Scenario: Verify the Save for Later functionality in Request Header details
 Given User Launch Chrome browser
    When User open URL 
    Then User Enter Email Address and pass PassWord
@@ -14,7 +14,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select Exception Return Reason
@@ -32,7 +32,7 @@ Given User Launch Chrome browser
    
  @TestCaseNo2
  @Sanity
-Scenario: Verify the MM Search functionality
+Scenario: Verify the Save for Later functionality Search/Upload Line item page
 Given User Launch Chrome browser
    When User open URL 
    Then User Enter Email Address and pass PassWord
@@ -40,7 +40,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select GRL Exception Reason
@@ -51,17 +51,20 @@ Given User Launch Chrome browser
    And Select CA Address first
    When select Collection Contact first
    And Click on next
-   And Enter MMIDs By using Excel Sheet
-   And Click on search button after Entering MM Number
-   And Clickon PO History check button
+   And Select Purchase/Sales Order button and Enter PO Number Through Excel
+   Then Click on the search button
+   Then Select All Line items
+  # Then Click on the Next button after All Line Items
    When Click on Save for later button
    And Check Status Open Unsubmitted
    And Print Case No into Console SR
    And Close browser
    
+
+   
 @TestCaseNo3
 @Sanity
-Scenario: Verify the PO History functionality for Remedy as NPR-Credit
+Scenario: Verify the Save for Later functionality Warranty Entitlement check page
 Given User Launch Chrome browser
    When User open URL 
    Then User Enter Email Address and pass PassWord
@@ -69,7 +72,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit NPR
     #And Select GRL Exception Reason
@@ -77,7 +80,6 @@ Given User Launch Chrome browser
    And Click on next
    And Enter MMIDs By using Excel Sheet
    And Click on search button after Entering MM Number
-   And Clickon PO History check button
  And Select All Line items with RM
  And Click on the Next button after All Line Items
  When Enter Quantity into All fields
@@ -86,10 +88,11 @@ Given User Launch Chrome browser
    And Check Status Open Unsubmitted
    And Print Case No into Console SR
   # And Close browser
-   
+  
+  
     @TestCaseNo4
    @Sanity
-Scenario: Verify the PO History functionality for Remedy as NPR-Credit
+Scenario: Verify the Save for Later functionality Product Validation/PO History page
 Given User Launch Chrome browser
    When User open URL 
    Then User Enter Email Address and pass PassWord
@@ -97,7 +100,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit NPR
     #And Select GRL Exception Reason
@@ -110,10 +113,41 @@ Given User Launch Chrome browser
  When Enter Quantity into All fields
  When Click On Warranty Entitlement Check
  And Click on next
- And Enter MMIDs By using Excel Sheet
-   And Click on search button after Entering MM Number
  And Clickon PO History check button
-    When Click on Save for later button
+  When Click on Save for later button
    And Check Status Open Unsubmitted
   And Print Case No into Console SR
-   And Close browser
+  # And Close browser
+   
+     @TestCaseNo5
+   @Sanity
+Scenario: Verify the Save for Later functionality Credit Price Validation page
+Given User Launch Chrome browser
+   When User open URL 
+   Then User Enter Email Address and pass PassWord
+   And Click on login
+   And Enter text global excel
+   And Click on the New R4C case creation button
+   And Select Service Type Exception and Click create button enter Sold through Excel file
+   And Select All other details
+   And Select Ship To contact
+   And Select credit NPR
+    #And Select GRL Exception Reason
+   Then Enter Justification
+   And Click on next
+   And Enter MMIDs By using Excel Sheet
+   And Click on search button after Entering MM Number
+ And Select All Line items with RM
+ And Click on the Next button after All Line Items
+ When Enter Quantity into All fields
+ When Click On Warranty Entitlement Check
+ And Click on next
+ And Clickon PO History check button
+ And Click on next
+ And Click On Credit price Validation
+# When Click on Save for later button
+  # And Check Status Open Unsubmitted
+  #And Print Case No into Console SR
+  # And Close browser
+   
+   

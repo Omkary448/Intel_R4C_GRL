@@ -18,7 +18,7 @@ Feature: Admin Case Creation
    And Select Service Type Admin and Click create button enter Sold through Excel file
    #And Enter SoldTo and select "0000015724" 
    #And Enter SoldTo and select "15724"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    #And Select Return Reson duplicate order
@@ -65,7 +65,7 @@ Feature: Admin Case Creation
    And Select Service Type Admin and Click create button enter Sold through Excel file
    #And Enter SoldTo and select "0000015724" 
    #And Enter SoldTo and select "15724"
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    #And Select Return Reson duplicate order
@@ -265,7 +265,7 @@ And Click on submit button After Summary
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Admin and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Lost Shipment
@@ -297,7 +297,7 @@ Scenario: Verify the Case creation for Admin & Return Reason as Mixed Product wi
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Admin and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Damage In Transit
@@ -326,7 +326,7 @@ Scenario: Verify the Case creation for Admin & Return Reason as Mixed Product wi
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Admin and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Return Reson Incorrect labeling
@@ -359,7 +359,7 @@ Scenario: Verify the Case creation for Admin & Return Reason as Mixed Product wi
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Admin and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Return Reson Incorrect labeling
@@ -394,7 +394,7 @@ Scenario: Verify the Case creation for Admin & Return Reason as Mixed Product wi
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Admin and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Return Reson Incorrect labeling
@@ -418,7 +418,7 @@ Scenario: Verify the Case creation for Admin & Return Reason as Mixed Product wi
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Admin and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Return Reson mixed product

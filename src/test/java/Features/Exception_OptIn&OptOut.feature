@@ -6,11 +6,7 @@ Feature: Exception Optin & Out
    #And Click on login
 @TestCaseNo1
 @Sanity
-<<<<<<< HEAD
 Scenario:  Verify the Opt-in & Opt-out functionality for ASMO/APAC/PROC/IJKK GEO's by clicking on "Ok" button in popup
-=======
-Scenario:  Verify the Opt-in & Opt-out functionality
->>>>>>> acb8ea77c883fa0805c227ae14fa4b673373a82e
 Given User Launch Chrome browser
    When User open URL 
    Then User Enter Email Address and pass PassWord
@@ -18,7 +14,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Exception Return Reason and click ok
@@ -33,11 +29,7 @@ Given User Launch Chrome browser
    
    @TestCaseNo2
 @Sanity2
-<<<<<<< HEAD
 Scenario:  Verify the Opt-in & Opt-out functionality for ASMO/APAC/PROC/IJKK GEO's by clicking on "Cancel" button in popup  
-=======
-Scenario:  Verify the Opt-in & Opt-out functionality 
->>>>>>> acb8ea77c883fa0805c227ae14fa4b673373a82e
 Given User Launch Chrome browser
    When User open URL 
    Then User Enter Email Address and pass PassWord
@@ -45,7 +37,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
    And Select Exception Return Reason and click cancel
@@ -61,11 +53,7 @@ Given User Launch Chrome browser
    
 @TestCaseNo3
 @Sanity3
-<<<<<<< HEAD
 Scenario: Verify the Opt-in & Opt-out functionality for GEO as EMEA
-=======
-Scenario: TestCase No3
->>>>>>> acb8ea77c883fa0805c227ae14fa4b673373a82e
 Given User Launch Chrome browser
    When User open URL 
    Then User Enter Email Address and pass PassWord
@@ -73,7 +61,7 @@ Given User Launch Chrome browser
    And Enter text global excel
    And Click on the New R4C case creation button
    And Select Service Type Exception and Click create button enter Sold through Excel file
-   And Select All other detils
+   And Select All other details
    And Select Ship To contact
    And Select credit
     And Select Exception Return Reason
